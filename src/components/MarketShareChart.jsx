@@ -86,7 +86,7 @@ const MarketShareChart = ({ activeSegment }) => {
           : 'Market Share by Clients'}
       </h3>
       <div className="chart-container">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={400}>
           <BarChart
             data={data}
             layout="vertical"

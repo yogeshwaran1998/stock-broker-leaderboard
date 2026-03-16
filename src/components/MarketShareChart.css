@@ -15,8 +15,8 @@
 
 .chart-container {
   width: 100%;
-  min-height: 300px;
-  height: auto;
+  height: 400px;
+  min-height: 400px;
 }
 
 .chart-tooltip {
@@ -90,6 +90,7 @@
   }
 
   .chart-container {
-    min-height: 350px;
+    min-height: 380px;
+    height: 380px;
   }
 }
