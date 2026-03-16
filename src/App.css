@@ -70,6 +70,7 @@
 
   .chart-wrapper {
     padding: 0 0.5rem;
+    min-height: 380px;
   }
 }
 

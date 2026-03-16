@@ -86,11 +86,11 @@ const MarketShareChart = ({ activeSegment }) => {
           : 'Market Share by Clients'}
       </h3>
       <div className="chart-container">
-        <ResponsiveContainer width="100%" height={450}>
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}
             layout="vertical"
-            margin={{ top: 10, right: 30, left: 100, bottom: 10 }}
+            margin={{ top: 10, right: 30, left: 10, bottom: 10 }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" horizontal={false} />
             <XAxis
@@ -104,11 +104,12 @@ const MarketShareChart = ({ activeSegment }) => {
               type="category"
               dataKey="name"
               stroke="var(--text-secondary)"
-              fontSize={12}
-              width={90}
+              fontSize={11}
+              width={80}
+              tickFormatter={(value) => value.length > 12 ? value.substring(0, 10) + '...' : value}
             />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={24}>
+            <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={28}>
               {data.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}

@@ -16,6 +16,7 @@
 .chart-container {
   width: 100%;
   min-height: 300px;
+  height: auto;
 }
 
 .chart-tooltip {
@@ -24,6 +25,8 @@
   border-radius: 8px;
   padding: 0.75rem 1rem;
   box-shadow: 0 4px 16px var(--shadow-color);
+  max-width: 200px;
+  word-wrap: break-word;
 }
 
 .tooltip-name {
@@ -64,7 +67,8 @@
   }
 
   .chart-container {
-    min-height: 280px;
+    min-height: 350px;
+    height: 420px;
   }
 
   .chart-tooltip {
