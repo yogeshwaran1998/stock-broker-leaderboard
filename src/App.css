@@ -1,0 +1,80 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.metrics-section {
+  margin-bottom: 1.5rem;
+}
+
+.charts-section {
+  margin-bottom: 1.5rem;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+.table-section {
+  margin-bottom: 1.5rem;
+}
+
+.sources-section {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .main-content {
+    padding: 1rem 0.875rem;
+  }
+
+  .content-header {
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .metrics-section,
+  .charts-section,
+  .table-section,
+  .sources-section {
+    margin-bottom: 1rem;
+  }
+
+  .chart-wrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .main-content {
+    padding: 1.25rem 1.25rem;
+  }
+}
